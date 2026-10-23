@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>Para Annie 🎁</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23000'/%3E%3Crect%20x='12'%20y='31'%20width='40'%20height='22'%20rx='3'%20fill='%23fff'/%3E%3Crect%20x='9'%20y='25'%20width='46'%20height='9'%20rx='3'%20fill='%23fff'%20stroke='%23d9cfd4'%20stroke-width='1'/%3E%3Crect%20x='28'%20y='25'%20width='8'%20height='28'%20fill='%23ff8fb8'/%3E%3Cellipse%20cx='23'%20cy='18'%20rx='9'%20ry='5.5'%20fill='%23ff8fb8'%20stroke='%23e8588f'%20stroke-width='2'%20transform='rotate%28-22%2023%2018%29'/%3E%3Cellipse%20cx='41'%20cy='18'%20rx='9'%20ry='5.5'%20fill='%23ff8fb8'%20stroke='%23e8588f'%20stroke-width='2'%20transform='rotate%2822%2041%2018%29'/%3E%3Ccircle%20cx='32'%20cy='21'%20r='4'%20fill='%23e8588f'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAD1ElEQVR4nO3dPU4bQRiA4SXKHUKRGhRBAVXaHCPXyElyDY6RlgoKogjqFMkpSGEFWbY/e9c7Px/s87RY6/HMu4OxdvEwAAAAAAAAAAAAAAAAAAAAAAAA0MBJ7wFM9ufr94OPOb351mAk68aMaugxsDleQRwj532PSksyc2D5Q8kbx/wmthVZj+IDS1tJxjhqZLHu6MWoOrCEieSKY8zsf/j86eBj/t7+OviYSYtxcGBjRjWMGFiqRBLFES3AyHnfI1qSMSuxJ4uZA9sTSpJEUsRRL4t1RySyc2BlRzUEA8vQR/84theg+Oxv2F6MnSvReGAjR9XSu75P376MnU+xPYz2AxszqsZ67hwbL75BFhs2TtaXM7XvwKJRtdd553jRvoyRT9p+YF2mYqducXTfM7ethrQ+sF7rtP68HScqxc7R8VzZeOqEyXbU5z1HhrNzGPdZWZLhdXnnkWLn6GJMGeMf9iYtNI5JS77YPpYYxxGLvcw+FhfH0cu8wD6WFcfMBV5aH33iWH/vvbQZH6n7nypDkp1DHzl1i6P92VAkwTYdZ9g2hiQ7x2DzWJNnKnrGsXFO/L39lWdeutiegb6XdHTeObZf/GL7SHixT/8rwYbelwlO5TLBDtpfYDyTC4ybanlrQlluTWhkmRdVpMpiJWMcKzkTOb355nbIRMreSD3naBur6EbqdOb/C4bjFrXIMfMHse71xVHE1D5e16KWkuXj88YmLfYyyxgWG8cweskXW8ZQ+9fK491D1eNPcvbjd/Sj7Y8f9nxu8fTlY7ExlXB+fVnpyO8rHXeVxdnVRaXjHyOOY9Jnnble1P+prpFIlTge7x6yzeAbtprqx7uH4n2Uf8+hjC7Ori6K/xIvHIcyOirex3L/WuGgknHYNroru3nYOQiJg5A4CImDkDgIiYOQOAiJg5A4CImDkDgIiYOQOAiJg1DJOM6vL5/ufxY8IFM93f8seLGgnYNQ4ThsHh2V3TaGGjuHProoXsZQ6daE8+vLjPetvFGrU7HGfSvueJvMHW9lvIz7+fm56hONUiiOJNvhyUn1/5DgrxVC4iAkDkLiICQOQuIgJA5C4iAkDkLiICQOQuIgJA5C4iAkDkLiICQOQuIgJA5C4iAkDkLiICQOQuIgJA5C4iAkDkLiICQOQuIgJA5C4iAkDkLiICQOQuIgJA5C4iAkDkLiICQOQuIgJA5C4iAkDkLiINQojgbf/7AobebTzkGoXRw2j1KazWTTnUMf87Wcw9a/VvQxR+PZq/sdbzutXmGKb317PZxUAAAAAAAAAAAAAAAAAAAAUNU/95JJSslMjh8AAAAASUVORK5CYII=">
+  <meta name="apple-mobile-web-app-title" content="Para Annie">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ESCENA PRINCIPAL (fondo de gatitos) -->
+  <main id="scene" aria-live="polite">
+    <div id="floaters" aria-hidden="true"></div>
+
+    <!-- Nota rosa (post-it) con la cuenta regresiva -->
+    <section id="note" class="note" hidden>
+      <span class="tape" aria-hidden="true"></span>
+      <p class="note-top">Faltan</p>
+      <div class="count" role="timer" aria-label="Tiempo que falta para el cumpleaños de Annie">
+        <div class="unit"><b id="d">00</b><small id="dl">días</small></div>
+        <div class="unit"><b id="h">00</b><small id="hl">horas</small></div>
+        <div class="unit"><b id="m">00</b><small id="ml">minutos</small></div>
+        <div class="unit"><b id="s">00</b><small id="sl">segundos</small></div>
+      </div>
+      <p class="note-bottom">para el cumpleaños de <span class="name">Annie</span> 🎂</p>
+      <p class="note-date" id="ndate">♡ 28 de octubre ♡</p>
+    </section>
+
+    <!-- Cartulina de feliz cumpleaños -->
+    <section id="card" class="card" hidden>
+      <svg class="bunting" viewBox="0 0 400 70" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 6 Q200 56 400 6" fill="none" stroke="#222" stroke-width="2"/>
+        <g id="flags"></g>
+      </svg>
+      <div class="cartulina">
+        <img class="deco d1" src="img/cat3.png" alt="">
+        <img class="deco d2" src="img/cat7.png" alt="">
+        <img class="deco d3" src="img/paw1.png" alt="">
+        <img class="deco d4" src="img/yarn.png" alt="">
+        <h1>
+          <span class="l1">¡Feliz</span>
+          <span class="l2">cumpleaños,</span>
+          <span class="l3">Annie!</span>
+        </h1>
+        <p class="cake">🎂 🎉 🎁</p>
+      </div>
+    </section>
+
+    <div id="confetti" aria-hidden="true"></div>
+  </main>
+
+  <!-- PUERTA NEGRA CON EL REGALO -->
+  <div id="intro">
+    <button id="gift" type="button" aria-label="Abrir el regalo">
+      <span class="spark s1">✦</span>
+      <span class="spark s2">✦</span>
+      <span class="spark s3">✦</span>
+      <span class="spark s4">✧</span>
+      <div class="gift-wrap">
+        <div class="box">
+          <div class="rib-v"></div>
+        </div>
+        <div class="lid">
+          <div class="rib-v"></div>
+          <div class="bow">
+            <span class="tail tl"></span>
+            <span class="tail tr"></span>
+            <span class="loop ll"></span>
+            <span class="loop lr"></span>
+            <span class="knot"></span>
+          </div>
+        </div>
+      </div>
+    </button>
+    <p class="hint">toca el regalo</p>
+    <div class="flash"></div>
+    <div id="burst" aria-hidden="true"></div>
+  </div>
+
+  <!-- Capa de efectos de clic (por encima de todo) -->
+  <div id="fx" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
